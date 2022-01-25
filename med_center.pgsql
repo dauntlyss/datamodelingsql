@@ -6,7 +6,7 @@ CREATE DATABASE medical_center_db;
 CREATE TABLE med_centers 
 (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(30) UNIQUE NOT NULL,
+  name VARCHAR(30) NOT NULL,
   specialty VARCHAR(30) NOT NULL,
   specialty_id SERIAL UNIQUE NOT NULL,
   phone VARCHAR(12)
