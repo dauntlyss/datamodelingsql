@@ -15,7 +15,7 @@ CREATE TABLE med_centers
 CREATE TABLE doctors 
 (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(30) UNIQUE NOT NULL,
+  name VARCHAR(30) NOT NULL,
   specialty INTEGER REFERENCES med_centers(specialty_id) ON DELETE SET NULL,
   pager VARCHAR(12),
   on_call BOOLEAN DEFAULT false,
